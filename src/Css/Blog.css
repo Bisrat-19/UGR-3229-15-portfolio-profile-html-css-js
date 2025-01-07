@@ -1,0 +1,164 @@
+body {
+    margin: auto 0;
+    padding: 0;
+    background-color: black;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+}
+
+.navlist ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.navlist li {
+    padding: 1.1em;
+}
+
+.navlist a {
+    color: white;
+    font-size: 1em;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.navlist li a:hover {
+    color: #63D1F6;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 3px 0px;
+}
+
+#img {
+    width: 60px;
+    height: 60px;
+    margin-top: 1vh;
+    margin-right: 2vw;
+    border-radius: 50%;
+}
+
+.search{
+    margin: 2% 5%;
+}
+
+.search input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.search button{
+    height: 35px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+h2{
+    margin-left:5%;
+    color: white;
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    background-color: white;
+    width: 26%;
+    padding: 1%;
+    margin: 2%;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 3%;
+
+}
+img{
+    width: 100%;
+}
+
+video{
+    width: 100%;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    position: relative; 
+    z-index: 1; 
+}
+
+#articleToggleButton {
+    padding: 10px 20px;
+    background-color: #01FF01; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#articleToggleButton:hover {
+    background-color: #0056b3; 
+}
+.no-results {
+    margin-left:5%;
+    color: red; 
+    font-size: 20px;
+}
+@media screen and (max-width: 770px) {
+    #img {
+        margin-right: 3vw;
+    }
+    .toggle-button {
+        display: flex;
+        position: absolute;
+        left: 3vw;
+    }
+    .navlist ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+        top: 12%;
+        left: 0;
+        background-color: #000000ee;
+    }
+    .navlist li {
+        padding: 0.3em;
+    }
+    .navlist ul.active {
+        display: flex;
+    }
+    .box{
+        width: 300px;
+    }
+}
