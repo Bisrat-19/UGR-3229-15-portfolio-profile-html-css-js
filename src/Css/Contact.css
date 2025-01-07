@@ -1,0 +1,162 @@
+body {
+    margin: auto 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+}
+
+.navlist ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.navlist li {
+    padding: 1.1em;
+}
+
+.navlist a {
+    color: white;
+    font-size: 1em;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.navlist li a:hover {
+    color: #63D1F6;
+}
+
+.toggle-button {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 3px 0px;
+}
+
+.container img {
+    width: 60px;
+    height: 60px;
+    margin-top: 1vh;
+    margin-right: 2vw;
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    margin: 1% 3%;
+}
+
+.Contact, .message {
+    width: 48%; 
+    box-sizing: border-box; 
+    color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+.inner{
+    display: flex;
+    gap: 3%;
+}
+
+.inner div{
+    text-align: center;
+    margin-top: 7%;
+}
+
+i{
+    color: white;
+    font-size: 3em;
+}
+
+span{
+    color:#01FF01;;
+}
+
+#feedback{
+    width: 90%;
+    height: 50vh;
+    padding: 1%;
+    margin: 3% 2% 0.5% 2%; 
+    border: 3px solid #01FF01;
+}
+#send{
+    width: 7em;
+    height: 2em;
+    margin-left: 2%; 
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #01FF01;
+}
+
+.copyright{
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    margin: 0;
+    text-align: center;
+    font-size: 0.8em;
+    color: #585D61;
+}
+
+
+@media screen and (max-width: 770px) {
+    .container img {
+        margin-right: 3vw;
+    }
+    .toggle-button {
+        display: flex; 
+        position: absolute; 
+        left: 3vw;
+    }
+    .navlist ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+        top: 12%;
+        left: 0;
+        background-color: #000000ee;
+    }
+    .navlist li {
+        padding: 0.3em;
+    }
+    .navlist ul.active {
+        display: flex; 
+    }
+    .navlist a {
+        color: white;
+    }
+    main{
+        flex-direction: column;
+        margin: 4%;
+    }
+    .Contact, .message {
+        width: 100%; 
+    }
+    .inner div{
+        margin-top: 3%;
+    }
+}
