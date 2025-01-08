@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLOG</title>
+<link rel="stylesheet" type="text/css" href="/src/Css/Blog.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="/src/Js/Blog.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="navlist">
+            <nav>
+                <ul id="navList">
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Hobbies.html">HOBBIES</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="toggle-button" id="navToggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div>
+            <img src="/src/Images/profile.JPG" alt="profile picture" id="img">
+        </div>
+    </div>
+</header>
+
+<div class="search">
+    <input type="text" id="searchInput" placeholder="Search..." required>
+    <button id="searchButton">Search</button>
+</div>
+<div id="searchResults"></div>
+
+<div>
+    <h2>Posts</h2>
+    <div class="cont">
+        <article class="box">
+            <img src="/src/Images/project.jpg" alt="KiloEats - Food Delivery App for Students" width="300" height="230">
+            <h3>KiloEats</h3>
+            <p><em>Posted on November 24, 2024</em></p>
+            <p>My project, KiloEats, is a food delivery app designed for students at AAU.</p>
+        </article>
+        
+        <article class="box">
+            <img src="/src/Images/harare.jpg" alt="Historical Heritage I Visit" width="300" height="230">
+            <h3>Historical Heritage I Visit</h3>
+            <p><em>Posted on November 20, 2024</em></p>
+            <p>Capturing the beauty of a historical heritage site I recently visited.</p>
+        </article>
+        
+        <article class="box">
+            <img src="/src/Images/food.jpg" alt="My Favorite Food" width="300" height="230">
+            <h3>My Favorite Food</h3>
+            <p><em>Posted on November 15, 2024</em></p>
+            <p>A delightful glimpse of my favorite dish that brings me comfort.</p>
+        </article>
+        
+        <article class="box">
+            <img src="/src/Images/workspace.jpg" alt="Workspace (Office) in My Home" width="300" height="230">
+            <h3>My Workspace</h3>
+            <p><em>Posted on November 10, 2024</em></p>
+            <p>My home workspace, designed for productivity and creativity.</p>
+        </article>
+        
+        <article class="box">
+            <img src="/src/Images/aau.jpg" alt="AAU Library" width="300" height="230">
+            <h3>AAU Library</h3>
+            <p><em>Posted on November 5, 2024</em></p>
+            <p>A vital resource for students, offering a serene study environment.</p>
+        </article>
+        
+        <article class="box">
+            <img src="/src/Images/birthday.jpg" alt="Birthday Celebration" width="300" height="230">
+            <h3>Birthday Celebration</h3>
+            <p><em>Posted on November 1, 2024</em></p>
+            <p>A joyful moment from my birthday celebration with friends and family.</p>
+        </article>
+
+        <!-- Hidden Articles -->
+        <article class="box hidden">
+            <video src="/Videos/AAU.mp4" controls width="300" height="230"></video>
+            <h3>University Showcase</h3>
+            <p><em>Posted on November 1, 2024</em></p>
+            <p>This video showcases my university, highlighting the campus, facilities, and student life.</p>
+        </article>
+
+        <article class="box hidden">
+            <video src="/src/Videos/Historical.mp4" controls width="300" height="230"></video>
+            <h3>Exploring Historical Places</h3>
+            <p><em>Posted on November 1, 2024</em></p>
+            <p>In this video, I explore historical places in Ethiopia that I want to visit, sharing their significance and beauty.</p>
+        </article>
+
+        <article class="box hidden">
+            <video src="/src/Videos/Arsenal.mp4" controls width="300" height="230"></video>
+            <h3>My Favorite Club: Arsenal</h3>
+            <p><em>Posted on November 1, 2024</em></p>
+            <p>This video is about my club, Arsenal, which I have loved since childhood, highlighting their history and my favorite moments.</p>
+        </article>
+    </div>
+
+    <div class="button-container">
+        <button id="articleToggleButton">See More</button>
+    </div>
+</div>
+
+</body>
+</html>
