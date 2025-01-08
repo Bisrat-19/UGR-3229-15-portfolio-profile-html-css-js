@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" type="text/css" href="/src/Css/About.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="/src/Js/About.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navlist">
+                <nav>
+                    <ul id="navList">
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Blog.html">BLOG</a></li>
+                        <li><a href="Hobbies.html">HOBBIES</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="toggle-button" id="toggleButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div>
+                <img src="/src/Images/profile.JPG" alt="profile picture" id="img">
+            </div>
+        </div>
+    </header>
+    <p class="description">Welcome to my "About Me" page! Here, you can explore my background, education, and skills. Understanding a person's journey is essential for appreciating their story. I invite you to download my CV for a detailed look at my experiences and milestones that have shaped who I am today.</p>
+    <div class="cont">
+        <div class="slide_container">
+            <div class="slides">
+                <section class="slide active">
+                    <h3>BACKGROUND</h3>
+                    <p>My name is Bisrat Dereje, and I hail from Chiro City in West Hararge. Born in 1995 EC, I grew up in a vibrant and supportive family that has played a significant role in shaping who I am today.
+                      Growing up in Chiro, I was surrounded by a nurturing environment, with my family placing a strong emphasis on education and personal development. I have one brother and two sisters, and together, we were encouraged to pursue our passions and strive for success.
+                      In Hararge, our community is closely-knit, and I was fortunate to have many friends who made my childhood life interesting and joyful. Together, we created countless memories, engaging in various activities and adventures that enriched our experiences.
+                      My parents, both dedicated teachers, instilled in us the values of knowledge, hard work, and compassion for others. Their commitment to education has inspired me to seek continuous growth and to value learning as a lifelong journey.</p>
+                </section>
+                <section class="slide">
+                    <h3>EDUCATION</h3>
+                    <p>I completed my high school education at Chercher Secondary and Preparatory School from 2010 to 2014 EC. Thanks to my high marks on the university entrance exam, I received the opportunity to attend Addis Ababa University.
+                       I am currently a third-year student at the Addis Ababa Institute of Technology (AAIT), specializing in Software Engineering within the School of Information Technology Engineering. I am eager to explore opportunities in this field, where I can apply my skills and knowledge.
+                       As a hard worker with strong teamwork and communication abilities, I am committed to contributing to a dynamic tech team. I am dedicated to further developing my technical skills while effectively collaborating on projects and embracing new learning opportunities.</p>
+                </section>
+                <section class="slide">
+                    <h3>SKILLS</h3>
+                    <div>
+                        <h4>Technical Skills:</h4>
+                        <table class="skills-table">
+                            <thead>
+                                <tr>
+                                    <th>Skill Type</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Programming Languages:</strong></td>
+                                    <td>Proficient in Java and Python...</td></tr>
+                                <tr><td><strong>Web Technologies:</strong></td>
+                                    <td>Knowledgeable in HTML, CSS, and JavaScript...</td></tr>
+                                <tr><td><strong>Networking:</strong></td>
+                                    <td>Familiar with networking concepts...</td></tr>
+                                <tr><td><strong>Database Management:</strong></td>
+                                    <td>Understanding of database management systems...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="slide">
+                    <h3>DOWNLOAD CV</h3>
+                    <div class="download-container">
+                        <a href="/src/Files/CV.pdf" download class="download-link">
+                            <i class="fas fa-download fa-3x"></i> 
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <button class="arrow left" id="prevButton">&#10094;</button>
+        <button class="arrow right" id="nextButton">&#10095;</button>
+    </div>
+    <div class="indicators">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+    </div>
+</body>
+</html>
+
