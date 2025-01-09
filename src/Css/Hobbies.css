@@ -2,7 +2,6 @@ body {
     margin: auto 0;
     padding: 0;
     background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .container {
@@ -70,7 +69,7 @@ body {
     margin: 0 3%; 
 }
 .box{
-    height: 75vh; 
+    height: 70vh; 
     padding: 0.5em;
     border-radius: 5px;
     box-shadow: 2px 2px 3px white;
@@ -79,6 +78,9 @@ body {
     overflow: hidden; 
 }
 
+p{
+    font-size: 1.1em;
+}
 h2{
     text-align: center;
     font-size: large;
@@ -130,8 +132,27 @@ video{
         grid-template-rows: 3fr;
         margin: 0 3%; 
     }
+    .con{
+        display: flex;
+        flex-direction: row-reverse;
+    }
     h2{
         text-align: left;
         font-size: medium;
+    }
+    video{
+        width: 50%; 
+        height: auto; 
+    }
+}
+@media screen and (max-width: 450px) {
+    .con{
+        display: inline-block;
+    }
+    video{
+        width: 100%; 
+    }
+    p{
+        font-size: 1em;
     }
 }

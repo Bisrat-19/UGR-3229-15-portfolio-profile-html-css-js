@@ -222,4 +222,23 @@ body {
     .arrow {
         top: 70%;
     }
+    .description {
+        margin: 1% 3% 1% 3%;
+        font-size: 1em;
+    }
+    .slide p{
+        padding: 2% 4%;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 770px) {
+    .arrow {
+        font-size: 1.7em;
+    }
+    .dot {
+        height: 0.6em;
+        width: 0.6em;
+        margin: 0 2.3px;
+        transition: background-color 0.3s;
+    }    
 }
